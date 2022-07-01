@@ -16,6 +16,7 @@ require_once "assets/data/data.php";
     <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/dist/css/lightbox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -28,7 +29,7 @@ require_once "assets/data/data.php";
             <div class="col-sm-6 col-lg-4 mb-4">
 
                 <div class="card">
-                    <img src="assets/img/<?= $value ?>">
+                <a href="assets/img/<?= $value ?>" data-lightbox="gallerie"><img class="test" src="assets/img/<?= $value ?>"></a>
                 </div>
 
             </div>
@@ -43,7 +44,8 @@ require_once "assets/data/data.php";
 
 
 
-
+    <script src="assets/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="assets/dist/js/lightbox.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 
